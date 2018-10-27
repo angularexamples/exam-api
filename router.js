@@ -5,10 +5,15 @@ var QuestionsController = require('./controllers/QuestionsController');
 var UserAnswersController = require('./controllers/UserAnswersController');
 var UserController = require('./controllers/UserController');
 
+
 module.exports = function (app) {
     app.get('/', (req, res) => {
-        res.send('The Quiz Api watch at 1332')
+        res.send('Revere Watch API is running at <a href="' + config.api_endpoint + '">' + config.api_endpoint + '</a>');
     });
+// module.exports = function (app) {
+//     app.get('/', (req, res) => {
+//         res.send('The Quiz Api watch at 1332')
+//     });
     var apiRoutes = express.Router();
 
     apiRoutes.get('/', (req, res) => {

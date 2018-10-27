@@ -23,6 +23,8 @@
   "system":{
     "jwt_expire": "24h",
     "port":1332,
+    "domain": "",
+    "api_endpoint":"http://ec2-13-232-217-40.ap-south-1.compute.amazonaws.com/v1/",
     "jwt_secretkey":"globalequityesearchandrevere",
     "salt":8
   }
